@@ -5,7 +5,7 @@
 int main()
 {
 	Lexer lexer = Lexer();
-	lexer.runLexer("a.txt");
+	lexer.runLexer("b.txt");
 	
 	system("pause");
 	return 0;

@@ -1,0 +1,11 @@
+LEXEME TABLE: 
+|1	1	1001|PROGRAM
+|1	9	3001|SIG01
+|1	14	501|;
+
+CONSTANTS TABLE: 
+
+IDENTIFIERS TABLE: 
+|	SIG01|	3001|
+
+Lexer: Error (line 4, column 5): unclosed comment

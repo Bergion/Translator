@@ -136,7 +136,7 @@ void Lexer::analization(string filename)
 				position += 2;
 				bool prevStar = false;
 				while (!(prevStar && inVal == ')')) {
-					if (in == -1) {
+					if ((in == -1) || file.eof()) {
 						//GENERATE ERROR: UNCLOSED COMMENT
 						error.GenerateLexerError(5, line, --position, inVal);
 						return;
@@ -189,8 +189,7 @@ int Lexer::getCategory(int symb) {
 	{
 		return 2;
 	}
-	else if (symb == 42 || symb == 43 || symb >= 45 && symb <= 47 ||
-		symb == 59 || symb == 61)
+	else if (symb >= 45 && symb < 47 || symb == 59 || symb == 61)
 	{
 		return 3;
 	}

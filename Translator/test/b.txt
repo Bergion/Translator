@@ -1,5 +1,4 @@
 Program sig01; (**)
 (* bagatoryadkoviyu
-*)
 begin ?
 end.
