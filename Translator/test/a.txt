@@ -1,0 +1,6 @@
+PROGRAM PROG1;
+BEGIN
+a = 3;
+b := 4;
+b = 5;
+END.
